@@ -9,29 +9,22 @@ int main() {
     scanf("%d", &a[i]);
   }
 
-  for(int i=0; i < 3; i++) {
-    for(int j=i+1; j < 3; j++) {
-      if(a[i] == a[j]) {
-        cnt += 1;
-        max = a[i];
-        printf("%d\n",cnt);
-      }else {
-        if(a[i] > max) {
+  if(a[0] == a[1] && a[1] == a[2]) {
+    coin = 10000 + (a[0]*1000);
+  }
+  else if(a[0] == a[1] || a[1] == a[2] ) {
+    coin = 1000 + (a[1]*100);
+  }else if (a[0] == a[2]) {
+    coin = 1000 + (a[0]*100);
+  }else {
+    for(int i=0; i < 3; i++) {
+      if(max < a[i]){
           max = a[i];
         }
-      }
     }
+    coin += max * 100;
   }
 
-  if(cnt == 1) {
-    coin = 1000 + (max*100);
-    printf("%d", coin);
-  }else if(cnt > 2) {
-    coin = 10000 + (max*1000);
-    printf("%d", coin);
-  }else {
-    coin += max * 100;
-    printf("%d", coin);
-  }
+  printf("%d", coin);
 
 }
