@@ -40,9 +40,9 @@ int main() {
     {
         while(1){
             idx = str.find(croatian[i]);
-            if(idx == string::npos)
+            if(idx == string::npos) //문자열을 찾지 못했을때.
                 break;
-            str.replace(idx,croatian[i].length(),"#");
+            str.replace(idx,croatian[i].length(),"&");
         }
     }
     cout << str.length();

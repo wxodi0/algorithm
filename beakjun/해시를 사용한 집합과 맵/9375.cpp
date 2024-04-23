@@ -5,6 +5,7 @@
 hat headgear
 sunglasses eyewear
 turban headgear
+mask face
 3
 mask face
 sunglasses face
@@ -43,14 +44,13 @@ int main() {
         m[body] = 1;
       }
     }
-    auto iter = m.begin();
     //각각의 총 개수를 구하여 곱해주기 
-    for(;iter != m.end(); iter++) {
+    for(auto iter = m.begin();iter != m.end(); iter++) {
       //예시로 a개의 옷을 입을때 a+1의 경우가 나온다. 그러므로 +1
       result *= (iter->second) + 1;
       //result에 곱해주는 이유는 총 경우의 수를 구해야 하기 때문.
     }
-    cout << result - 1 << endl;
+    cout << result - 1 << '\n';
   }
 
   return 0;
