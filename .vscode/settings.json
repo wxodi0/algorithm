@@ -44,6 +44,14 @@
     "typeinfo": "cpp",
     "queue": "cpp",
     "map": "cpp",
-    "stack": "cpp"
+    "stack": "cpp",
+    "string_view": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "bit": "cpp",
+    "ctime": "cpp",
+    "optional": "cpp",
+    "iomanip": "cpp",
+    "numbers": "cpp"
   }
 }
