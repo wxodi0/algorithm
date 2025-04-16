@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-  }
-} 
-=======
 #include <iostream>
 #include <deque>
 using namespace std;
@@ -44,4 +39,3 @@ int main() {
     dq.clear();
   }
 }
->>>>>>> 58463df12ccf9211ae1dbd42204c8a79ab372107
