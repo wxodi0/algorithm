@@ -52,6 +52,7 @@
     "ctime": "cpp",
     "optional": "cpp",
     "iomanip": "cpp",
-    "numbers": "cpp"
+    "numbers": "cpp",
+    "cstring": "cpp"
   }
 }
