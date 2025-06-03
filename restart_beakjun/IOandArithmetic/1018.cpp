@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+<<<<<<< HEAD
 #include <cmath>
 using namespace std;
 
@@ -74,11 +75,19 @@ int startB(int k, int p) {
 
 int main() {
   int n, m, minResult = 64, result = 0;
+=======
+using namespace std;
+
+int main() {
+  int n, m;
+  string str[51][51];
+>>>>>>> 027b98527de5f4dd2ba2b25c6dcac5d6e5030091
 
   cin >> n >> m;
 
   for(int i = 0; i < n; i++) {
     for(int j = 0; j < m; j++) {
+<<<<<<< HEAD
       cin >> board[i][j];
     }
   }
@@ -93,4 +102,11 @@ int main() {
   }
 
   cout << minResult;
+=======
+      cin >> str[i][j];
+    }
+  }
+
+  
+>>>>>>> 027b98527de5f4dd2ba2b25c6dcac5d6e5030091
 }
