@@ -43,17 +43,23 @@ using namespace std;
 vector<string> v;
 
 int main() {
-  map<string, int> m;
-  int n, m;
+  map<string, int> mp;
+  int n, m, cnt = 0;
   string str;
 
-  cin >> n;
+  cin >> n >> m;
 
   for(int i = 0; i < n; i++) {
     cin >> str;
-    v.push_back(str);
+    mp.insert({str, 1});
   }
 
-  
+  for(int i = 0; i < m; i++) {
+    cin >> str;
+    if(mp[str] == 1) {
+      cnt++;
+    }
+  }
 
+  cout << cnt;
 }
